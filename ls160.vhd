@@ -6,7 +6,7 @@ ENTITY ls160 is
 PORT(
 	data: in std_logic_vector(3 downto 0);--4位预置数，load非高电平置数
 	clk,load,enp,ent,clr:in std_logic;--注释见architecture
-	count: buffer std_logic_vector(3 downto 0);--4位计数值
+	count: buffer std_logic_vector(3 downto 0);--4位计数值，使用buffer让其保持状态
 	tc:out std_logic--溢出位，高电平溢出
 );
 END ls160; 
@@ -14,9 +14,7 @@ END ls160;
 architecture behavior OF ls160 IS 
 BEGIN   
 	tc<='1' when (count="1001" and enp='1' and ent='1' and load='1' and clr='1') else '0';--溢出进位 
-	cale:
-		process(clk,clr,enp,ent,load) 
-		begin 
+	process(clk,clr,enp,ent,load) begin 
 			if(rising_edge(clk)) then --时钟上升沿时开始工作
 				if(clr='1')then --CLR高电平工作，低电平清零
 					if(load='1')then --load非高电平置数
@@ -40,7 +38,7 @@ BEGIN
 					count<="0000";
 				end if;
 			end if;
-	end process cale;
+	end process;
 END behavior;
 
 --https://github.com/lincanbin
