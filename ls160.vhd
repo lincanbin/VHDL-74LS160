@@ -1,18 +1,18 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.all; 
+library ieee;
+use ieee.std_logic_1164.all; 
 use ieee.std_logic_unsigned.all; 
  
-ENTITY ls160 is 
-PORT(
+entity ls160 is 
+port(
 	data: in std_logic_vector(3 downto 0);--4位预置数，load非高电平置数
 	clk,load,enp,ent,clr:in std_logic;--注释见architecture
 	count: buffer std_logic_vector(3 downto 0);--4位计数值，使用buffer让其保持状态
 	tc:out std_logic--溢出位，高电平溢出
 );
-END ls160; 
+end ls160; 
  
-architecture behavior OF ls160 IS 
-BEGIN   
+architecture behavior of ls160 is 
+begin   
 	tc<='1' when (count="1001" and enp='1' and ent='1' and load='1' and clr='1') else '0';--溢出进位 
 	process(clk,clr,enp,ent,load) begin 
 			if(rising_edge(clk)) then --时钟上升沿时开始工作
@@ -39,7 +39,7 @@ BEGIN
 				end if;
 			end if;
 	end process;
-END behavior;
+end behavior;
 
 --https://github.com/lincanbin
 --20150427
