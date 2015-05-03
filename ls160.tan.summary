@@ -7,7 +7,7 @@ Slack          : N/A
 Required Time  : None
 Actual Time    : 6.600 ns
 From           : data[1]
-To             : count[1]~reg0
+To             : q[1]~reg0
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -16,8 +16,8 @@ Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
 Actual Time    : 13.500 ns
-From           : count[0]~reg0
-To             : tc
+From           : q[0]~reg0
+To             : rco
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -27,7 +27,7 @@ Slack          : N/A
 Required Time  : None
 Actual Time    : 13.200 ns
 From           : ent
-To             : tc
+To             : rco
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -37,7 +37,7 @@ Slack          : N/A
 Required Time  : None
 Actual Time    : -0.600 ns
 From           : clr
-To             : count[0]~reg0
+To             : q[0]~reg0
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -46,8 +46,8 @@ Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
 Actual Time    : 144.93 MHz ( period = 6.900 ns )
-From           : count[2]~reg0
-To             : count[1]~reg0
+From           : q[2]~reg0
+To             : q[1]~reg0
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0

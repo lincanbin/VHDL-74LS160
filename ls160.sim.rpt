@@ -1,5 +1,5 @@
 Simulator report for ls160
-Mon Apr 27 00:26:21 2015
+Mon May 04 00:09:38 2015
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -105,36 +105,36 @@ Please use Quartus II to view the waveform report data.
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+----------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                    ;
-+----------------------+----------------------+------------------+
-; Node Name            ; Output Port Name     ; Output Port Type ;
-+----------------------+----------------------+------------------+
-; |ls160|count[0]~reg0 ; |ls160|count[0]~reg0 ; data_out0        ;
-; |ls160|count[1]~reg0 ; |ls160|count[1]~reg0 ; data_out0        ;
-; |ls160|count[2]~reg0 ; |ls160|count[2]~reg0 ; data_out0        ;
-; |ls160|count[3]~reg0 ; |ls160|count[3]~reg0 ; data_out0        ;
-; |ls160|count~26      ; |ls160|count~26      ; data_out0        ;
-; |ls160|count~27      ; |ls160|count~27      ; data_out0        ;
-; |ls160|count~28      ; |ls160|count~28      ; data_out0        ;
-; |ls160|count~29      ; |ls160|count~29      ; data_out0        ;
-; |ls160|Add0~0        ; |ls160|Add0~0        ; data_out0        ;
-; |ls160|count~30      ; |ls160|count~30      ; data_out0        ;
-; |ls160|count~31      ; |ls160|count~31      ; data_out0        ;
-; |ls160|count~32      ; |ls160|count~32      ; data_out0        ;
-; |ls160|tc~7          ; |ls160|tc~12         ; cascout          ;
-; |ls160|tc~9          ; |ls160|tc~9          ; data_out0        ;
-; |ls160|clr           ; |ls160|clr~corein    ; dataout          ;
-; |ls160|clk           ; |ls160|clk~corein    ; dataout          ;
-; |ls160|load          ; |ls160|load~corein   ; dataout          ;
-; |ls160|ent           ; |ls160|ent~corein    ; dataout          ;
-; |ls160|enp           ; |ls160|enp~corein    ; dataout          ;
-; |ls160|count[0]      ; |ls160|count[0]      ; padio            ;
-; |ls160|count[1]      ; |ls160|count[1]      ; padio            ;
-; |ls160|count[2]      ; |ls160|count[2]      ; padio            ;
-; |ls160|count[3]      ; |ls160|count[3]      ; padio            ;
-; |ls160|tc            ; |ls160|tc            ; padio            ;
-+----------------------+----------------------+------------------+
++----------------------------------------------------------+
+; Complete 1/0-Value Coverage                              ;
++------------------+--------------------+------------------+
+; Node Name        ; Output Port Name   ; Output Port Type ;
++------------------+--------------------+------------------+
+; |ls160|q[0]~reg0 ; |ls160|q[0]~reg0   ; data_out0        ;
+; |ls160|q[1]~reg0 ; |ls160|q[1]~reg0   ; data_out0        ;
+; |ls160|q[2]~reg0 ; |ls160|q[2]~reg0   ; data_out0        ;
+; |ls160|q[3]~reg0 ; |ls160|q[3]~reg0   ; data_out0        ;
+; |ls160|q~26      ; |ls160|q~26        ; data_out0        ;
+; |ls160|q~27      ; |ls160|q~27        ; data_out0        ;
+; |ls160|q~28      ; |ls160|q~28        ; data_out0        ;
+; |ls160|q~29      ; |ls160|q~29        ; data_out0        ;
+; |ls160|Add0~0    ; |ls160|Add0~0      ; data_out0        ;
+; |ls160|q~30      ; |ls160|q~30        ; data_out0        ;
+; |ls160|q~31      ; |ls160|q~31        ; data_out0        ;
+; |ls160|q~32      ; |ls160|q~32        ; data_out0        ;
+; |ls160|rco~7     ; |ls160|rco~12      ; cascout          ;
+; |ls160|rco~9     ; |ls160|rco~9       ; data_out0        ;
+; |ls160|clr       ; |ls160|clr~corein  ; dataout          ;
+; |ls160|clk       ; |ls160|clk~corein  ; dataout          ;
+; |ls160|load      ; |ls160|load~corein ; dataout          ;
+; |ls160|ent       ; |ls160|ent~corein  ; dataout          ;
+; |ls160|enp       ; |ls160|enp~corein  ; dataout          ;
+; |ls160|q[0]      ; |ls160|q[0]        ; padio            ;
+; |ls160|q[1]      ; |ls160|q[1]        ; padio            ;
+; |ls160|q[2]      ; |ls160|q[2]        ; padio            ;
+; |ls160|q[3]      ; |ls160|q[3]        ; padio            ;
+; |ls160|rco       ; |ls160|rco         ; padio            ;
++------------------+--------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
@@ -176,7 +176,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Apr 27 00:26:21 2015
+    Info: Processing started: Mon May 04 00:09:38 2015
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ls160 -c ls160
 Info: Using vector source file "C:/Users/²Ó±ó/Desktop/Work/74LS60/ls160.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
@@ -186,8 +186,8 @@ Info: Simulation coverage is      85.71 %
 Info: Number of transitions in simulation is 513
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 153 megabytes
-    Info: Processing ended: Mon Apr 27 00:26:21 2015
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Mon May 04 00:09:39 2015
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

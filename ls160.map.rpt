@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ls160
-Mon Apr 27 00:24:12 2015
+Mon May 04 00:04:38 2015
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Apr 27 00:24:12 2015        ;
+; Analysis & Synthesis Status ; Successful - Mon May 04 00:04:38 2015        ;
 ; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name               ; ls160                                        ;
 ; Top-level Entity Name       ; ls160                                        ;
@@ -122,25 +122,25 @@ applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+---------------------------------------------+
 
 
-+------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary    ;
-+--------------------------------+---------------+
-; Resource                       ; Usage         ;
-+--------------------------------+---------------+
-; Total logic elements           ; 14            ;
-; Total combinational functions  ; 11            ;
-;     -- Total 4-input functions ; 8             ;
-;     -- Total 3-input functions ; 2             ;
-;     -- Total 2-input functions ; 1             ;
-;     -- Total 1-input functions ; 0             ;
-;     -- Total 0-input functions ; 0             ;
-; Total registers                ; 4             ;
-; I/O pins                       ; 14            ;
-; Maximum fan-out node           ; count[0]~reg0 ;
-; Maximum fan-out                ; 6             ;
-; Total fan-out                  ; 57            ;
-; Average fan-out                ; 2.04          ;
-+--------------------------------+---------------+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------------+------------+
+; Resource                       ; Usage      ;
++--------------------------------+------------+
+; Total logic elements           ; 14         ;
+; Total combinational functions  ; 11         ;
+;     -- Total 4-input functions ; 8          ;
+;     -- Total 3-input functions ; 2          ;
+;     -- Total 2-input functions ; 1          ;
+;     -- Total 1-input functions ; 0          ;
+;     -- Total 0-input functions ; 0          ;
+; Total registers                ; 4          ;
+; I/O pins                       ; 14         ;
+; Maximum fan-out node           ; q[0]~reg0  ;
+; Maximum fan-out                ; 6          ;
+; Total fan-out                  ; 57         ;
+; Average fan-out                ; 2.04       ;
++--------------------------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -174,7 +174,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Apr 27 00:24:10 2015
+    Info: Processing started: Mon May 04 00:04:36 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ls160 -c ls160
 Info: Found 2 design units, including 1 entities, in source file ls160.vhd
     Info: Found design unit 1: ls160-behavior
@@ -186,7 +186,7 @@ Info: Implemented 28 device resources after synthesis - the final resource count
     Info: Implemented 14 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 237 megabytes
-    Info: Processing ended: Mon Apr 27 00:24:12 2015
+    Info: Processing ended: Mon May 04 00:04:38 2015
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

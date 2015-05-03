@@ -36,7 +36,7 @@
  ------------------------------------------------------------------------------
 
 
-File Generation Date & Time: Mon Apr 27 00:24:15 2015
+File Generation Date & Time: Mon May 04 00:04:42 2015
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 CHIP  "ls160"  ASSIGNED TO AN: EP1K50QC208-3
 
@@ -48,9 +48,9 @@ nCEO                         : 3         : output :                   :         
 TDO                          : 4         : output :                   :         :           :                
 VCC_IO                       : 5         : power  :                   : 3.3V    :           :                
 GND_INT                      : 6         : gnd    :                   :         :           :                
-count[2]                     : 7         : output : LVTTL/LVCMOS      :         :           : N              
-count[0]                     : 8         : output : LVTTL/LVCMOS      :         :           : N              
-count[3]                     : 9         : output : LVTTL/LVCMOS      :         :           : N              
+q[2]                         : 7         : output : LVTTL/LVCMOS      :         :           : N              
+q[0]                         : 8         : output : LVTTL/LVCMOS      :         :           : N              
+q[3]                         : 9         : output : LVTTL/LVCMOS      :         :           : N              
 GND*                         : 10        :        :                   :         :           :                
 GND*                         : 11        :        :                   :         :           :                
 GND*                         : 12        :        :                   :         :           :                
@@ -190,7 +190,7 @@ GND_INT                      : 145       : gnd    :                   :         
 VCC_IO                       : 146       : power  :                   : 3.3V    :           :                
 data[2]                      : 147       : input  : LVTTL/LVCMOS      :         :           : N              
 data[1]                      : 148       : input  : LVTTL/LVCMOS      :         :           : N              
-tc                           : 149       : output : LVTTL/LVCMOS      :         :           : N              
+rco                          : 149       : output : LVTTL/LVCMOS      :         :           : N              
 GND*                         : 150       :        :                   :         :           :                
 GND_INT                      : 151       : gnd    :                   :         :           :                
 VCC_INT                      : 152       : power  :                   : 2.5V    :           :                
@@ -248,5 +248,5 @@ GND*                         : 203       :        :                   :         
 GND*                         : 204       :        :                   :         :           :                
 GND*                         : 205       :        :                   :         :           :                
 GND*                         : 206       :        :                   :         :           :                
-count[1]                     : 207       : output : LVTTL/LVCMOS      :         :           : N              
+q[1]                         : 207       : output : LVTTL/LVCMOS      :         :           : N              
 GND*                         : 208       :        :                   :         :           :                

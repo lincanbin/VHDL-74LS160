@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "ls160")
-  (DATE "04/27/2015 00:24:19")
+  (DATE "05/04/2015 00:04:53")
   (VENDOR "Altera")
   (PROGRAM "Quartus II")
   (VERSION "Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition")
@@ -69,7 +69,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_lcell")
-    (INSTANCE count\~27.lecomb)
+    (INSTANCE q\~27.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1800:1800:1800) (1800:1800:1800))
@@ -94,7 +94,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_lcell")
-    (INSTANCE count\~26.lecomb)
+    (INSTANCE q\~26.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1800:1800:1800) (1800:1800:1800))
@@ -117,7 +117,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_lcell")
-    (INSTANCE count\[0\]\~reg0.lecomb)
+    (INSTANCE q\[0\]\~reg0.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (200:200:200) (200:200:200))
@@ -130,7 +130,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_lcell_register")
-    (INSTANCE count\[0\]\~reg0.lereg)
+    (INSTANCE q\[0\]\~reg0.lereg)
     (DELAY
       (ABSOLUTE
         (PORT clk (1300:1300:1300) (1300:1300:1300))
@@ -170,7 +170,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_lcell")
-    (INSTANCE count\~30.lecomb)
+    (INSTANCE q\~30.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1800:1800:1800) (1800:1800:1800))
@@ -186,7 +186,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_lcell")
-    (INSTANCE count\[2\]\~reg0.lecomb)
+    (INSTANCE q\[2\]\~reg0.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (200:200:200) (200:200:200))
@@ -197,7 +197,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_lcell_register")
-    (INSTANCE count\[2\]\~reg0.lereg)
+    (INSTANCE q\[2\]\~reg0.lereg)
     (DELAY
       (ABSOLUTE
         (PORT clk (1300:1300:1300) (1300:1300:1300))
@@ -214,7 +214,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_lcell")
-    (INSTANCE count\~31.lecomb)
+    (INSTANCE q\~31.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (200:200:200) (200:200:200))
@@ -239,7 +239,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_lcell")
-    (INSTANCE count\~32.lecomb)
+    (INSTANCE q\~32.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1800:1800:1800) (1800:1800:1800))
@@ -255,7 +255,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_lcell")
-    (INSTANCE count\[3\]\~reg0.lecomb)
+    (INSTANCE q\[3\]\~reg0.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1300:1300:1300) (1300:1300:1300))
@@ -266,7 +266,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_lcell_register")
-    (INSTANCE count\[3\]\~reg0.lereg)
+    (INSTANCE q\[3\]\~reg0.lereg)
     (DELAY
       (ABSOLUTE
         (PORT clk (1300:1300:1300) (1300:1300:1300))
@@ -283,7 +283,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_lcell")
-    (INSTANCE count\~28.lecomb)
+    (INSTANCE q\~28.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1100:1100:1100) (1100:1100:1100))
@@ -308,7 +308,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_lcell")
-    (INSTANCE count\~29.lecomb)
+    (INSTANCE q\~29.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1800:1800:1800) (1800:1800:1800))
@@ -324,7 +324,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_lcell")
-    (INSTANCE count\[1\]\~reg0.lecomb)
+    (INSTANCE q\[1\]\~reg0.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1300:1300:1300) (1300:1300:1300))
@@ -335,7 +335,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_lcell_register")
-    (INSTANCE count\[1\]\~reg0.lereg)
+    (INSTANCE q\[1\]\~reg0.lereg)
     (DELAY
       (ABSOLUTE
         (PORT clk (1300:1300:1300) (1300:1300:1300))
@@ -352,7 +352,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_lcell")
-    (INSTANCE tc\~7.lecomb)
+    (INSTANCE rco\~7.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1800:1800:1800) (1800:1800:1800))
@@ -368,7 +368,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_lcell")
-    (INSTANCE tc\~9.lecomb)
+    (INSTANCE rco\~9.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1100:1100:1100) (1100:1100:1100))
@@ -386,7 +386,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_io")
-    (INSTANCE count\[0\]\~I.inst1)
+    (INSTANCE q\[0\]\~I.inst1)
     (DELAY
       (ABSOLUTE
         (PORT datain (1100:1100:1100) (1100:1100:1100))
@@ -396,7 +396,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_io")
-    (INSTANCE count\[1\]\~I.inst1)
+    (INSTANCE q\[1\]\~I.inst1)
     (DELAY
       (ABSOLUTE
         (PORT datain (900:900:900) (900:900:900))
@@ -406,7 +406,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_io")
-    (INSTANCE count\[2\]\~I.inst1)
+    (INSTANCE q\[2\]\~I.inst1)
     (DELAY
       (ABSOLUTE
         (PORT datain (1100:1100:1100) (1100:1100:1100))
@@ -416,7 +416,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_io")
-    (INSTANCE count\[3\]\~I.inst1)
+    (INSTANCE q\[3\]\~I.inst1)
     (DELAY
       (ABSOLUTE
         (PORT datain (1100:1100:1100) (1100:1100:1100))
@@ -426,7 +426,7 @@
   )
   (CELL
     (CELLTYPE "flex10ke_asynch_io")
-    (INSTANCE tc\~I.inst1)
+    (INSTANCE rco\~I.inst1)
     (DELAY
       (ABSOLUTE
         (PORT datain (2000:2000:2000) (2000:2000:2000))

@@ -1,5 +1,5 @@
 Fitter report for ls160
-Mon Apr 27 00:24:15 2015
+Mon May 04 00:04:42 2015
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -54,7 +54,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------+
 ; Fitter Summary                                                       ;
 +-----------------------+----------------------------------------------+
-; Fitter Status         ; Successful - Mon Apr 27 00:24:15 2015        ;
+; Fitter Status         ; Successful - Mon May 04 00:04:42 2015        ;
 ; Quartus II Version    ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name         ; ls160                                        ;
 ; Top-level Entity Name ; ls160                                        ;
@@ -146,17 +146,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------+-------+-----+------+---------+--------+--------------+-------------------------+---------------+-----------------+---------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Output Pins                                                                                                                                                                                            ;
-+----------+-------+-----+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+---------------+--------------+
-; Name     ; Pin # ; Row ; Col. ; I/O Register ; Use Local Routing Output ; Power Up High ; Slow Slew Rate ; PCI I/O Enabled ; Single-Pin OE ; Single-Pin CE ; Open Drain ; TRI Primitive ; I/O Standard ;
-+----------+-------+-----+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+---------------+--------------+
-; count[0] ; 8     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
-; count[1] ; 207   ; --  ; 35   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
-; count[2] ; 7     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
-; count[3] ; 9     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
-; tc       ; 149   ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
-+----------+-------+-----+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+---------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                        ;
++------+-------+-----+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+---------------+--------------+
+; Name ; Pin # ; Row ; Col. ; I/O Register ; Use Local Routing Output ; Power Up High ; Slow Slew Rate ; PCI I/O Enabled ; Single-Pin OE ; Single-Pin CE ; Open Drain ; TRI Primitive ; I/O Standard ;
++------+-------+-----+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+---------------+--------------+
+; q[0] ; 8     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; q[1] ; 207   ; --  ; 35   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; q[2] ; 7     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; q[3] ; 9     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; rco  ; 149   ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
++------+-------+-----+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+---------------+--------------+
 
 
 +-----------------------------------+
@@ -170,9 +170,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; 4     ; #TDO       ;              ;
 ; 5     ; VCC_IO     ;              ;
 ; 6     ; GND_INT    ;              ;
-; 7     ; count[2]   ; LVTTL/LVCMOS ;
-; 8     ; count[0]   ; LVTTL/LVCMOS ;
-; 9     ; count[3]   ; LVTTL/LVCMOS ;
+; 7     ; q[2]       ; LVTTL/LVCMOS ;
+; 8     ; q[0]       ; LVTTL/LVCMOS ;
+; 9     ; q[3]       ; LVTTL/LVCMOS ;
 ; 10    ; GND*       ;              ;
 ; 11    ; GND*       ;              ;
 ; 12    ; GND*       ;              ;
@@ -312,7 +312,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; 146   ; VCC_IO     ;              ;
 ; 147   ; data[2]    ; LVTTL/LVCMOS ;
 ; 148   ; data[1]    ; LVTTL/LVCMOS ;
-; 149   ; tc         ; LVTTL/LVCMOS ;
+; 149   ; rco        ; LVTTL/LVCMOS ;
 ; 150   ; GND*       ;              ;
 ; 151   ; GND_INT    ;              ;
 ; 152   ; VCC_INT    ;              ;
@@ -370,19 +370,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; 204   ; GND*       ;              ;
 ; 205   ; GND*       ;              ;
 ; 206   ; GND*       ;              ;
-; 207   ; count[1]   ; LVTTL/LVCMOS ;
+; 207   ; q[1]       ; LVTTL/LVCMOS ;
 ; 208   ; GND*       ;              ;
 +-------+------------+--------------+
 
 
-+------------------------------------------------------------+
-; Control Signals                                            ;
-+----------+---------+---------+--------------+--------------+
-; Name     ; Pin #   ; Fan-Out ; Usage        ; Global Usage ;
-+----------+---------+---------+--------------+--------------+
-; count~27 ; LC2_A35 ; 4       ; Clock enable ; Non-global   ;
-; clk      ; 79      ; 4       ; Clock        ; Pin          ;
-+----------+---------+---------+--------------+--------------+
++--------------------------------------------------------+
+; Control Signals                                        ;
++------+---------+---------+--------------+--------------+
+; Name ; Pin #   ; Fan-Out ; Usage        ; Global Usage ;
++------+---------+---------+--------------+--------------+
+; q~27 ; LC2_A35 ; 4       ; Clock enable ; Non-global   ;
+; clk  ; 79      ; 4       ; Clock        ; Pin          ;
++------+---------+---------+--------------+--------------+
 
 
 +------------------------------------+
@@ -410,32 +410,32 @@ Parallel compilation was disabled, but you have multiple processors available. E
 
 +---------------------------------+
 ; Non-Global High Fan-Out Signals ;
-+-------------+-------------------+
-; Name        ; Fan-Out           ;
-+-------------+-------------------+
-; count[0]~36 ; 6                 ;
-; clr         ; 6                 ;
-; load        ; 6                 ;
-; count[2]~38 ; 5                 ;
-; count[1]~37 ; 5                 ;
-; count~41    ; 4                 ;
-; count[3]~39 ; 4                 ;
-; enp         ; 2                 ;
-; ent         ; 2                 ;
-; count~45    ; 1                 ;
-; data[0]     ; 1                 ;
-; count~44    ; 1                 ;
-; data[1]     ; 1                 ;
-; tc~12       ; 1                 ;
-; data[2]     ; 1                 ;
-; count~43    ; 1                 ;
-; count~40    ; 1                 ;
-; Add0~1      ; 1                 ;
-; tc~13       ; 1                 ;
-; count~46    ; 1                 ;
-; count~42    ; 1                 ;
-; data[3]     ; 1                 ;
-+-------------+-------------------+
++---------+-----------------------+
+; Name    ; Fan-Out               ;
++---------+-----------------------+
+; q[0]~36 ; 6                     ;
+; clr     ; 6                     ;
+; load    ; 6                     ;
+; q[2]~38 ; 5                     ;
+; q[1]~37 ; 5                     ;
+; q~41    ; 4                     ;
+; q[3]~39 ; 4                     ;
+; enp     ; 2                     ;
+; ent     ; 2                     ;
+; q~45    ; 1                     ;
+; data[0] ; 1                     ;
+; q~44    ; 1                     ;
+; data[1] ; 1                     ;
+; rco~12  ; 1                     ;
+; data[2] ; 1                     ;
+; q~43    ; 1                     ;
+; q~40    ; 1                     ;
+; Add0~1  ; 1                     ;
+; rco~13  ; 1                     ;
+; q~46    ; 1                     ;
+; q~42    ; 1                     ;
+; data[3] ; 1                     ;
++---------+-----------------------+
 
 
 +-------------------------------------------+
@@ -578,9 +578,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; EABs                              ; 0 / 10 ( 0 % )       ;
 ; Total memory bits                 ; 0 / 40,960 ( 0 % )   ;
 ; Total RAM block bits              ; 0 / 40,960 ( 0 % )   ;
-; Maximum fan-out node              ; count[0]~reg0        ;
+; Maximum fan-out node              ; q[0]~reg0            ;
 ; Maximum fan-out                   ; 6                    ;
-; Highest non-global fan-out signal ; count[0]~reg0        ;
+; Highest non-global fan-out signal ; q[0]~reg0            ;
 ; Highest non-global fan-out        ; 6                    ;
 ; Total fan-out                     ; 57                   ;
 ; Average fan-out                   ; 2.04                 ;
@@ -597,26 +597,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------+
-; Delay Chain Summary               ;
-+----------+----------+-------------+
-; Name     ; Pin Type ; Pad to Core ;
-+----------+----------+-------------+
-; clr      ; Input    ; OFF         ;
-; clk      ; Input    ; OFF         ;
-; data[0]  ; Input    ; ON          ;
-; load     ; Input    ; OFF         ;
-; ent      ; Input    ; OFF         ;
-; enp      ; Input    ; OFF         ;
-; data[1]  ; Input    ; ON          ;
-; data[2]  ; Input    ; ON          ;
-; data[3]  ; Input    ; ON          ;
-; count[0] ; Output   ; OFF         ;
-; count[1] ; Output   ; OFF         ;
-; count[2] ; Output   ; OFF         ;
-; count[3] ; Output   ; OFF         ;
-; tc       ; Output   ; OFF         ;
-+----------+----------+-------------+
++----------------------------------+
+; Delay Chain Summary              ;
++---------+----------+-------------+
+; Name    ; Pin Type ; Pad to Core ;
++---------+----------+-------------+
+; clr     ; Input    ; OFF         ;
+; clk     ; Input    ; OFF         ;
+; data[0] ; Input    ; ON          ;
+; load    ; Input    ; OFF         ;
+; ent     ; Input    ; OFF         ;
+; enp     ; Input    ; OFF         ;
+; data[1] ; Input    ; ON          ;
+; data[2] ; Input    ; ON          ;
+; data[3] ; Input    ; ON          ;
+; q[0]    ; Output   ; OFF         ;
+; q[1]    ; Output   ; OFF         ;
+; q[2]    ; Output   ; OFF         ;
+; q[3]    ; Output   ; OFF         ;
+; rco     ; Output   ; OFF         ;
++---------+----------+-------------+
 
 
 +--------------+
@@ -631,7 +631,7 @@ The pin-out file can be found in C:/Users/²Ó±ó/Desktop/Work/74LS60/ls160.pin.
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Apr 27 00:24:13 2015
+    Info: Processing started: Mon May 04 00:04:39 2015
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off ls160 -c ls160
 Info: Selected device EP1K50QC208-3 for design "ls160"
 Warning: Feature SignalProbe is not available with your current license
@@ -642,7 +642,7 @@ Info: Timing requirements not specified -- optimizing circuit to achieve the fol
     Info: Not setting a global tco requirement
     Info: Not setting a global tpd requirement
 Info: Inserted 0 logic cells in first fitting attempt
-Info: Started fitting attempt 1 on Mon Apr 27 2015 at 00:24:13
+Info: Started fitting attempt 1 on Mon May 04 2015 at 00:04:40
 Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
@@ -651,8 +651,8 @@ Info: Fitter routing operations beginning
 Info: Fitter routing operations ending: elapsed time is 00:00:00
 Info: Quartus II Fitter was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 211 megabytes
-    Info: Processing ended: Mon Apr 27 00:24:15 2015
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Mon May 04 00:04:42 2015
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 
